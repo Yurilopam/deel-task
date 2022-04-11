@@ -1,0 +1,30 @@
+{
+  "name": "deel-task",
+  "version": "1.0.0",
+  "author": "yurilogam@gmail.com",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn sequelize db:migrate && yarn sequelize db:seed:all --debug && nodemon ./src/server.js",
+    "test": "jest",
+    "coverage": "jest --coverage && npx servor coverage"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.17.3",
+    "sequelize": "^6.18.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-junit": "^13.1.0",
+    "jest-mock-req-res": "^1.0.2",
+    "jest-sonar": "^0.2.12",
+    "nodemon": "^2.0.15",
+    "sequelize-cli": "^6.4.1"
+  },
+  "engines": {
+    "node": ">=16.14.2"
+  },
+  "engineStrict": true
+}
